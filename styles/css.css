@@ -1,0 +1,396 @@
+/* header */
+.Green-head{
+    background-color:#9ACD32;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    color:white;
+}
+.logo{
+    width: 100%;
+    height: 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top: 20px;
+    font-size:20px;
+    font-family: 'DejaVu Sans Bold';
+}
+.ojaxuri-logo{
+  width:200px;
+  height:100px;
+}
+.chvens-shesaxeb{
+    display:flex;
+    justify-content:space-between;
+    text-align: center;
+    width:800px;
+}
+.logo-peri{
+    color:black;
+}
+.ojaxuri{
+    color:#2E8B57;
+    font-weight: 40px;
+    font-size: 30px;
+}
+
+
+/* burger */
+.headder-wraper {
+  background-color: greenyellow;
+  padding: 30px;
+  height: 30px;
+  display:none;
+}
+.header-navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list li a {
+  color: #fff;
+  font-size: 24px;
+}
+.nav-list li {
+  margin: 10px;
+}
+
+/* burger code */
+.toggle-menu {
+  position:fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid lightblue;
+  display: none;
+  z-index: 100;
+}
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0); 
+  transition: all 0.3s linear; 
+}
+.line1 {
+  top: 30%;
+}
+.line3 {
+  top: 70%;
+}
+
+.active .line1 {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.active .line2 {
+  display: none;
+}
+.active .line3 {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.nav-list.toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: greenyellow;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+/* responsive code */
+@media (max-width:768px) {
+  .toggle-menu {
+      display: block;
+  }
+  .nav-list {
+      display: none;
+  }
+}
+
+/* slide */
+.slide {
+  display: block;
+  width: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.slider-wraper {
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  background-color: greenyellow;
+  color: white;
+  border-radius: 50%;
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  outline: none;
+  border: none;
+}
+.arrow.arrow-left {
+  left: 30px;
+}
+.arrow.arrow-right {
+  right: 30px;
+}
+.title {
+  position: absolute;
+  top:600px;
+  bottom: 20px;
+  left: 30px;
+  color: greenyellow;
+  font-size: 50px;
+  font-weight:bold;
+}
+
+/* dots styles */
+.dots {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  cursor: pointer;
+  margin:7px;
+}
+.dot.active {
+  background-color: red;
+}
+
+/* bg image */
+.slide-bg{
+  width:100%;
+  height:600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+/* products */
+.chveni-produqtebi{
+    color:black;
+    font-size: 50px;;
+    margin-top:80px;
+    margin-bottom:80px;
+    display:flex;
+    justify-content: center;
+    font-family: 'BPG Irubaqidze';
+}
+.sheidzinet{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:100%;
+    text-align:center;
+    font-family: 'BPG Irubaqidze';
+   font-size: 20px;
+}
+/* footer */
+.footer-clean {
+    width:100%;
+    background-color:black;
+    color:white;
+    margin-top:100px;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:17px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+  }
+  
+/* sawarmo css */
+.sawarmo{
+    display:flex;
+    margin-top:40px;
+    margin-left:30px;
+    width:100%;
+    height:700px;
+    
+}
+.sawarmo-text{
+    display:flex;
+    margin-top:150px;
+    margin-left:20px;
+    font-size: 30px;
+    font-family: 'BPG Irubaqidze';
+}
+.sawarmo2{
+    display:flex;
+    margin-top:40px;
+    margin-left:30px;
+    width:100%;
+}
+.full-sawarmo{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    margin-right: 80px;
+}
+
+/* produqciis gverdi */
+.produqciis-photo{
+  margin: 50px 300px 50px 60px;
+}
+.produqciis-text{
+  font-size:25px;
+  font-family:'BPG Irubaqidze';
+  font-stretch: semi-condensed;
+display:flex;
+flex-direction: column;
+margin-top: 40px;
+margin-left:30px;
+margin-bottom:50px;
+}
+.produqciis-text:hover{
+  background-color: #9ACD32;
+}
+
+/* export page */ 
+.export-photo{
+  background-image: url('../images/export.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:500px;
+    margin-top:40px;
+    margin-bottom:50px;
+}
+.export-photo2{
+  background-image: url('../images/export1.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left:80px;
+  width: 800px;
+  height:800px;
+}
+.export-text{
+  font-size:20px;
+  margin-left:30px;
+  font-family: 'DejaVu Sans Bold';
+}
+.export-text:hover{
+  background-color: greenyellow;
+}
+.export-text2{
+  font-size:20px;
+  margin-left:30px;
+  font-family: 'DejaVu Sans Bold';
+}
+.export-text2:hover{
+  background-color: greenyellow;
+}
+.export-photo3{
+  background-image: url('../images/export3.jpeg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left:80px;
+  width:800px;
+  height:800px;
+}
+
+/* contact page */
+/* form validation styles */
+.forma{
+margin-top:100px;
+margin-left:200px;
+}
+
+.error-text {
+  color: red;
+  font-size: 25px;
+}
+
+.password-input {
+  position: relative;
+  display: inline-block;
+}
+#toggle-icon {
+  position:absolute;
+  right:20px;
+  top:50%;
+  transform: translateY(-50%);
+}
+#showpassword {
+  height:60px;
+}
