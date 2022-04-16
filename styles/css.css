@@ -33,14 +33,13 @@
 }
 .ojaxuri{
     color:#2E8B57;
-    font-weight: 40px;
     font-size: 30px;
 }
 
 
 /* burger */
 .headder-wraper {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   padding: 30px;
   height: 30px;
   display:none;
@@ -68,14 +67,14 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  border: 2px solid lightblue;
+  border: 2px solid green;
   display: none;
   z-index: 100;
 }
 .line {
   width: 100%;
   height: 3px;
-  background-color: #fff;
+  background-color: green;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -454,7 +453,7 @@ font-family: 'DejaVu Sans Bold';
 }
 .ajax{
   margin-top:100px;
-  margin-button: 30px;
+  margin-bottom: 30px;
   margin-left: 200px;
   font-size: 25px;
  color:#9ACD32;

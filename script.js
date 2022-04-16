@@ -1,13 +1,3 @@
-// burger
-let burgerButton = document.getElementById('toggleButton');
-let navBar = document.getElementById('navigation-ul');
-
-
-burgerButton.addEventListener('click', function() {
-    navBar.classList.toggle('toggle');
-    burgerButton.classList.toggle('active');
-})
-
 // slide
 
 let data = [
@@ -35,7 +25,7 @@ let data = [
         title: 'ოჯახურის საწარმო',
         url: 'https://www.youtube.com/watch?v=eEaZvEZye84'
     }
-]
+];
 
 let arrowLeft = document.getElementById('arrow-left-button');
 let arrowRight = document.getElementById('arrow-right-button');
@@ -86,7 +76,7 @@ function createDots(item) {
             let id = event.target.getAttribute('data-id');
             sliderIndex = id;
             setSlide();
-        }
+        };
 
         dots.appendChild(dotElement);
     });
@@ -140,9 +130,8 @@ function arrowRightClick() {
     setSlide();
 }
 
-arrowLeft.addEventListener('click', arrowLeftClick);
+arrowLeft.addEventListener('click', arrowleftClick);
 arrowRight.addEventListener('click', arrowRightClick);
 
 
 setSlide();
-
