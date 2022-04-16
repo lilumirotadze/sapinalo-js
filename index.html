@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js">    </script>
+</head>
+    <body>
+    <div id="counter"></div>
     <header>
     <section>
     <div class="Green-head">
@@ -69,9 +72,8 @@
         <div class="slider-wraper">
             <button class="arrow arrow-left" id="arrow-left-button"> < </button>
             <button class="arrow arrow-right" id="arrow-right-button"> > </button>
-    
             <div class="slider-content" id="slider-content">
-    </div>
+        </div>
                 <div class="chveni-produqtebi">
               <h5>ჩვენი პროდუქტები</h5>
 </div>
@@ -99,55 +101,6 @@
                 <h3>სელის საკმაზი (50გ)</h3>
                 <p>1,80 ლ</p>
             </div>
-    
-            <div class="soda">
-                <img src="images/soda.png" alt="soda">
-                <h3>სოდა (50გ)</h3>
-                <p>1,80 ლ</p>
-            </div>
-
-            <div class="oregano">
-                <img src="images/oregano.png" alt="oregano">
-                <h3>ორეგანოს საკმაზი (50გ)</h3>
-                <p>1,80 ლ</p>
-            </div>
-
-            <div class="pitna">
-                <img src="images/pitna.png" alt="pitna">
-                <h3>პიტნის საკმაზი (50გ)</h3>
-                <p>1,80 ლ</p>
-            </div>
-        
-            <div class="ucxo">
-                <img src="images/ucxo.png" alt="ucso">
-                <h3>უცხო სუნელის საკმაზი (50გ)</h3>
-                <p>1,80 ლ</p>
-            </div>
-
-            <div class="cukatebi">
-                <img src="images/cukatebi.png" alt="cukatebi">
-                <h3>ცუკატები (50გ)</h3>
-                <p>1,80 ლ</p>
-            </div>
-
-            <div class="dapna">
-                <img src="images/dapna.png" alt="dapna">
-                <h3>დაფნის საკმაზი(50გ)</h3>
-                <p>1,80 ლ</p>
-            </div>
-
-            <div class="meqsikuri">
-                <img src="images/meqsikuri.png" alt="meqsikuri">
-                <h3>მექსიკური კარტოფილის საკმაზი (50გ)</h3>
-                <p>2,00 ლ</p>
-            </div>
-
-            <div class="qoqosi">
-                <img src="images/qoqosi.png" alt="qoqosi">
-                <h3>ქოქოსის ფანტელი (50გ)</h3>
-                <p>2,15 ლ</p>
-            </div>
-        </div>
 </div> 
 </section>
 <section>
@@ -189,5 +142,6 @@
     </footer>
     </section>
     <script src="script.js"></script>
+    <script src="sessionstorage.js"></script>
 </body>
 </html>

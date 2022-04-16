@@ -15,22 +15,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js">    </script>
 </head>
 <body>
+    <div id="counter"></div>
     <header>
         <div class="Green-head">
-            <img class="phone" src="images/phone.png" alt="phone">
-            <p>032 272 67 57</p>
-            <img class="mail" src="images/mail.png" alt="mail">
-            <p>info@ojakhuri.ge</p>
-            <p>მიწოდება 3-5 სამუშაო დღეში</p>
         </div>
         <div class="logo">
                 <div class="ojaxuri-logo">
             <img src="images/logo.svg" alt="logo">
-            </div>
-            <div class="bar" id="BurgerIcon">
-                <i class="fas fa-bars"></i>
             </div>
             <ul class="chvens-shesaxeb" id="navigationBlock">
                 <li>
@@ -49,7 +43,36 @@
             </ul>
         </div>
     </header>
-    <script src="script.js"></script>
+</div>
+               <div class="container">
+            <nav class="header-navigation">
+
+                <div class="toggle-menu" id="toggleButton">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+
+                <ul class="nav-list" id="navigation-ul">
+                    <li><a href="#">ოჯახური საწარმო</a></li>
+                    <li><a href="#">ჩვენი პროდუქცია</a></li>
+                    <li><a href="#">ოჯახური ექსპორტი</a></li>
+                    <li><a href="#">კონტაქტი</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+      <!-- filter-->
+      <div class="container3">
+        <div class="search-block">
+            <h4> ჩვენი თანამშრომლები </h4>
+            <input type="text" id="filter" placeholder="Search">
+        </div>
+        <ul id="result" class="user-list">
+        </ul>
+    </div>
 <div class="full-div">
 <div class="export-photo">
 </div>
@@ -98,7 +121,8 @@
             </div>
         </footer>
     </div>
-
 </section>
+<script src="exportis.js"></script>
+<script src="sessionstorage.js"></script>
     </body>
     </html>

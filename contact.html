@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js">    </script>
 </head>
 <body>
+    <div id="counter"></div>
     <header>
         <div class="Green-head">
         </div>
@@ -99,6 +101,15 @@
     </form>
     </div>
     </div>
+    <!-- ajax -->
+    <section class = "ajax">
+        <h1> ჩვენი პარტნიორები არიან კომპანიები: </h1>
+        <div id="api">
+            <ul id="user-list">
+            </ul>
+        </div>
+        <button id="loadmore"> შემდეგი </button>  
+    </section>
     <section>
         <div class="footer-clean">
         <footer>
@@ -136,6 +147,8 @@
         </footer>
 </div>
 </section>
-<script src="script.js"></script>
+<script src="ajax.js"></script>
+<script src="kontaqtis.js"></script>
+<script src="sessionstorage.js"></script>
 </body>
 </html>   

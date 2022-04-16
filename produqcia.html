@@ -15,24 +15,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js">    </script>
 </head>
 <body>
+    <div id="counter"></div>
     <header>
         <div class="Green-head">
-            <img class="phone" src="images/phone.png" alt="phone">
-            <p>032 272 67 57</p>
-            <img class="mail" src="images/mail.png" alt="mail">
-            <p>info@ojakhuri.ge</p>
-            <p>მიწოდება 3-5 სამუშაო დღეში</p>
         </div>
         <div class="logo">
                 <div class="ojaxuri-logo">
             <img src="images/logo.svg" alt="logo">
             </div>
-            <div class="bar" id="BurgerIcon">
-                <i class="fas fa-bars"></i>
+            <div class="headder-wraper {
+                " id="BurgerIcon">
+                            <div class="container">
+                        <nav class="header-navigation">
+            
+                            <div class="toggle-menu" id="toggleButton">
+                                <div class="line line1"></div>
+                                <div class="line line2"></div>
+                                <div class="line line3"></div>
+                            </div>
+                               <ul class="nav-list" id="navigation-ul">
+                                  <li><a href="#">ოჯახური საწარმო</a></li>
+                                  <li><a href="#">ჩვენი პროდუქცია</a></li>
+                                  <li><a href="#">ოჯახური ექსპორტი</a></li>
+                                  <li><a href="#">კონტაქტი</a></li>
+                                </ul>
+                             </nav>
+                            </div>
             </div>
-            <ul class="chvens-shesaxeb" id="navigationBlock">
+                <ul class="chvens-shesaxeb" id="navigationBlock">
                 <li>
                     <a class="logo-peri" href="index.html" >ოჯახური საწარმო</a>
                    </li>
@@ -49,30 +62,25 @@
             </ul>
         </div>
     </header>
-    <script src="script.js"></script>
 <div>
     <div class="produqciis-photo">
         <img src="images/ojaxuri-sawarmo2.jpg" alt="sawarmo">
     </div>
-    <div class="produqciis-text">
-        <div>
-<p>„ოჯახური ტრადიციები თანამედროვე შეფუთვაში“ − სლოგანმა მალევე დაიპყრო ქართველი მომხმარებლების გულები და ასორტიმენტის მრავალფეროვნებით ქართულ ბაზარზე უკვე წლებია უკონკურენტო ლიდერია.</p>
-</div>
-<div>
-    <p>შ.პ.ს. დაბი არის კომპანია, რომელიც დაარსდა 2010 წელს და მის მთავარ საქმიანობას წარმოადგენს ქართული პროდუქციის წარმოება.
-        ვინ ვართ ჩვენ?
-       
-       დღეს კომპანიას წამყვანი ადგილი უჭირავს ქართულ ბაზარზე, აგრეთვე გვაქვს ექსპორტი საზღვარგარეთ. ვახდენთ პროდუქციის გადამუშავებას და ქართული ტრადიციების გათვალისწინებით ვქმნით ახალს. მომხმარებელს ვთავაზობთ საუკეთესო ხარისხს თანამედროვე, მოსახერხებელ შეფუთვაში. საქმისადმი ამგვარმა დამოკიდებულებამ ჩვენი ბიზნესი მკვეთრად გაზარდა.</p>
-</div>
-<div>
-    <p>
-        კომპანიაში არის ოჯახური განწყობა, რაც ხელს უწყობს ერთად დავსახოთ და განვახორციელოთ სამომავლო გეგმები.
-პასუხისმგებლობა: ჩვენი თითოეული თანამშრომელი პასუხს აგებს თავის დაკისრებულ ვალდებულებას.
-უპირატესობა: ჩვენ ვმუშაობთ ეფექტურად და ვცდილობთ გადავლახოთ ყველა სახის წინაამღდეგობა, რათა დავაკმაყოფილოთ მომხმარებლის მოთხოვნები. ჩვენ ვაწარმოებთ მაღალი ხარისხის პროდუქტს, რათა არ დავტოვოთ უკმაყოფილო ქართული და უცხოური ბაზარი.
-    </p>
-</div>
-</div>
-</div>
+    
+    <!-- accordion -->
+    <div class="accordion-body">
+        <div class="accordion">
+            <h1>ოჯახური ტრადიციები თანამედროვე შეფუთვაში</h1>
+            <div class="container2">
+                <div class="accordion-title"> კომპანია შ.პ.ს. დაბი</div>
+                <div class="content">შ.პ.ს. დაბი არის კომპანია, რომელიც დაარსდა 2010 წელს და მის მთავარ საქმიანობას წარმოადგენს ქართული პროდუქციის წარმოება. ვინ ვართ ჩვენ? დღეს კომპანიას წამყვანი ადგილი უჭირავს ქართულ ბაზარზე, აგრეთვე გვაქვს ექსპორტი საზღვარგარეთ. ვახდენთ პროდუქციის გადამუშავებას და ქართული ტრადიციების გათვალისწინებით ვქმნით ახალს. მომხმარებელს ვთავაზობთ საუკეთესო ხარისხს თანამედროვე, მოსახერხებელ შეფუთვაში. საქმისადმი ამგვარმა დამოკიდებულებამ ჩვენი ბიზნესი მკვეთრად გაზარდა.</div>
+            </div>
+            <div class="container2">
+                <div class="accordion-title"> სამომავლო გეგმები </div>
+                <div class="content"> ჩვენი თითოეული თანამშრომელი პასუხს აგებს თავის დაკისრებულ ვალდებულებას. უპირატესობა: ჩვენ ვმუშაობთ ეფექტურად და ვცდილობთ გადავლახოთ ყველა სახის წინაამღდეგობა, რათა დავაკმაყოფილოთ მომხმარებლის მოთხოვნები. ჩვენ ვაწარმოებთ მაღალი ხარისხის პროდუქტს, რათა არ დავტოვოთ უკმაყოფილო ქართული და უცხოური ბაზარი.</div>
+            </div>
+        </div>
+    </div>
 <section>
     <div class="footer-clean">
     <footer>
@@ -109,7 +117,8 @@
         </div>
     </footer>
 </div>
-
 </section>
+<script src="produqciis.js"></script>
+<script src="sessionstorage.js"></script>
 </body>
 </html>

@@ -69,6 +69,10 @@ flex-wrap: wrap;
         margin-top:100px;
      } 
 }
+@media (max-width:448px){
+    .full-div{
+    font-size:10px;
+}
 
 /* contac responsive */
 

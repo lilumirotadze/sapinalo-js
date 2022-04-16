@@ -305,21 +305,51 @@
 }
 
 /* produqciis gverdi */
+/* accordion */
+ .accordion {
+   max-width:800px;
+    width: 100%;
+    margin: 20px auto;
+    font-family:'BPG Irubaqidze';
+}
+.container2 {
+    position: relative;
+    background-color:greenyellow;
+    margin: 10px;
+}
+.accordion-title {
+    position: relative;
+    padding: 10px;
+}
+.accordion-title::before {
+    content: '+';
+    position: absolute;
+    top:50%;
+    right:20px;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+.content {
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.7s;
+}
+.container2.active .content {
+    height: 100px;
+    padding-top: 25px;
+}
+.container2.active .accrordion-title::before {
+    content: '-';
+    font-size: 30px;
+    font-family:'BPG Irubaqidze';
+    font-stretch: semi-condensed;
+}
+
 .produqciis-photo{
   margin: 50px 300px 50px 60px;
-}
-.produqciis-text{
-  font-size:25px;
-  font-family:'BPG Irubaqidze';
-  font-stretch: semi-condensed;
-display:flex;
-flex-direction: column;
-margin-top: 40px;
-margin-left:30px;
-margin-bottom:50px;
-}
-.produqciis-text:hover{
-  background-color: #9ACD32;
 }
 
 /* export page */ 
@@ -369,11 +399,39 @@ margin-bottom:50px;
   height:800px;
 }
 
+/* filter */
+.container3 {
+  margin-top:50px;
+  margin-left:30px;
+  max-width:400px;
+  width: 100%;
+  color:#9ACD32;
+  border-radius:20px;
+}
+.search-block input {
+  width: 100%;
+}
+.user-list img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.user-list li.active {
+  display: none;
+}
+
+
 /* contact page */
+
 /* form validation styles */
 .forma{
 margin-top:100px;
 margin-left:200px;
+font-size:25px;
+border-radius:20px;
+font-family: 'DejaVu Sans Bold';
 }
 
 .error-text {
@@ -393,4 +451,12 @@ margin-left:200px;
 }
 #showpassword {
   height:60px;
+}
+.ajax{
+  margin-top:100px;
+  margin-button: 30px;
+  margin-left: 200px;
+  font-size: 25px;
+ color:#9ACD32;
+ font-family: 'DejaVu Sans Bold';
 }
